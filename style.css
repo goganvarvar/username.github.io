@@ -1,0 +1,502 @@
+@font-face {
+    font-family: 'TT-lakes-Bold';
+    font-style: normal;
+    src: url("fonts/TTLakes/TTLakes-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: 'TT-lakes-Medium';
+    font-style: normal;
+    src: url("fonts/TTLakes/TTLakes-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: 'TT-lakes-Regular';
+    font-style: normal;
+    src: url("fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+}
+body {
+    font-size: 28px;  
+    padding: 0;
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+.container-wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background-color: #FFFFFF;
+    padding: 24px 16px;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+button {
+    border: none;
+    background-color: unset;
+}
+
+.All-Button {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+}
+
+.All-Button--burger {
+    background-image: url("img/palki.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.All-Button--servise {
+   background-image: url("img/instrum.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.All-Button--status {
+    background-image: url("img/lupa.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.All-Button--call {
+    background-image: url("img/telefon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.All-Button--chat {
+    background-image: url("img/strelka.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.All-Button--hidden {
+    display: none;
+}
+
+.All-Button--profile {
+    background-image: url("img/lk.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 16px;
+    position: relative; 
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: "";
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+.header__wrapper-left {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.header__wrapper-right {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+ .header__wrapper-right__add {
+    display: flex;
+    column-gap: 16px;
+    justify-content: flex-end;
+} 
+
+.container {
+    padding: 20px 0 39px 0;
+}
+
+.title {
+    margin: 0;
+    padding: 0 16px;
+}
+
+.title__text {
+    position: relative;
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 24px;
+    font-family: 'TT-lakes-bold';
+}
+
+.title__text::before {
+    content: "";
+    height: 40px;
+    width: 4px;
+    background-color: #41F6D7;
+    border-radius: 0 25% 25% 0;
+    position: absolute;
+    left: -16px;
+}
+
+.description {
+    max-height: 40px;
+}
+
+.description p {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    padding-left: 16px;
+    overflow: auto;
+}
+
+.menu__item {
+    white-space: nowrap;
+    display: flex;
+}
+
+.menu__button  {
+    font-family:'TT-lakes-medium' ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #7e7e82;
+    height: 100%;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.menu__item--active {
+    border: 2px solid #b8ffec;
+    border-radius: 5px;
+}
+
+.info {
+    padding-top: 24px;
+}
+
+.info__text1 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.01em;
+    color: #1b1c21;
+    margin: 0;
+    padding: 0 16px 6px 16px;
+    font-family: 'TT-lakes-regular';
+}
+
+.info__text2{
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.01em;
+    color: #1b1c21;
+    margin: 0;
+    padding: 0 15px 10px 15px;
+    font-family: 'TT-lakes-regular';
+}
+
+.info__button {
+    position: relative;
+    padding: 10px 10px 16px 35px;
+    font-weight: 400;
+    font-family:'TT-lakes-medium' ;
+    font-size: 16px;
+}
+
+.info__button::before {
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background-image: url("img/strelka.svg");
+    left: 14px;
+    top: 60%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+}
+
+.info__foto {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.info__foto-img {
+    width: 100%;
+    height: auto;
+}
+
+ @media (min-width: 768px) {
+
+.header {
+    padding: 24px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.description p {
+    display: none;
+}
+
+.container {
+    padding: 24px 25px 40px 24px;
+}
+
+.Button{
+    display: flex;
+ }
+
+.All-Button--hidden {
+    display: block;
+} 
+    
+.logo::before {
+    content: "";
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+     
+.All-Button--profile::before {
+    content: "";
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu {
+    padding-left: 24px;
+}
+
+.container {
+    padding-left: 0;
+}
+
+.title__text {
+    margin-bottom: 32px;
+}
+
+.info {
+    display: flex;
+    margin-top: 8px;
+}
+
+.info__text-wrapper{
+    padding-right: 48px;
+    padding-left: 24px;
+}
+
+.info__text1 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: #1b1c21;
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-family: 'TT-lakes-regular';
+}
+
+.info__text2 {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: #1b1c21;
+    margin: 0;
+    padding: 0 15px 0 0;
+    font-family: 'TT-lakes-regular';
+}
+
+.info__button {
+    position: relative;
+    padding: 10px 10px 16px 45px;
+    font-weight: 400;
+    font-family:'TT-lakes-medium' ;
+}
+
+.info__button::before {
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background-image: url("img/strelka.svg");
+    left: 25px;
+    top: 60%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+}
+
+.info__text-wrapper {
+    max-height: 152px;
+    overflow: hidden;
+}
+
+.info__foto-img {
+    width: 360px;
+    height: 208px;
+    border-radius: 5px;
+}
+
+.header__wrapper-left {
+    column-gap: 42px;    
+}
+
+} 
+ 
+ @media (min-width: 1120px) {
+
+.header {
+    height: 1px;
+    padding: 0;
+}
+
+.All-Button--burger {
+  display: none;
+}
+
+.All-Button--call {
+    display: none;
+}
+
+.All-Button--chat {
+    display: none;
+}
+
+.All-Button--profile {
+    display: none;
+}
+
+.logo {
+    display: none;
+}
+
+.wrapper {
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-weight: 500;
+    font-size: 16px;
+    font-family:'TT-lakes-medium';
+    column-gap: 8px;
+}
+
+.description p {
+    display: block;
+}
+
+.header__wrapper-right {
+    gap: 32px;
+}
+
+.container {
+    padding: 42px 25px 49px 0;
+    background-color: #F8F8F8;
+}
+
+.title__text {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.info__text1 , .info__text2 {
+    padding-left: 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-left: 32px; 
+}
+
+.info {
+    padding: 0;
+}
+
+.info__text-wrapper {
+    padding-left: 34px;
+    padding-right: 36px;
+    width: 490px;
+    max-height: 160px;
+    overflow: hidden;
+}
+
+.info__button {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+    position: relative;
+    padding: 10px 10px 16px 65px;
+    font-weight: 400;
+    font-family:'TT-lakes-medium' ;
+}
+
+.info__button::before {
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background-image: url("img/strelka.svg");
+    left: 35px;
+    top: 60%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+}
+
+ .info__foto-img {
+    width: 531px;
+    height: 307px;
+    border-radius: 5px;
+} 
+}
